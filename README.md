@@ -21,8 +21,6 @@ Seja bem vindo ao meu projeto👋
 ## 🤝 Contribuições
 Requisições para contribuições, issues e features são bem vindas!<br />Dê uma olhada em: [issues page](https://github.com/AdrianoBinhara/RegisterBot/issues)
 Deixe uma ⭐️ se você gostou do projeto!
-## Creditos
-**[Markdown Readme Generator](https://github.com/AdrianoBinhara/RegisterBot)**
 ## 📝 License
 
 Esse projeto é licenciado pelo [MIT](https://github.com/AdrianoBinhara/RegisterBot/blob/master/LICENSE).
