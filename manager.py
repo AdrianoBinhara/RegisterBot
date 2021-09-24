@@ -9,7 +9,7 @@ class Manager(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print(f"Estou pronto! Esotu conectado como {self.bot.user}")
+        print(f"Estou pronto! Estou conectado como {self.bot.user}")
 
 
 def setup(bot):
