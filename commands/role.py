@@ -58,7 +58,7 @@ class Role(commands.Cog):
                         nextPage = get_pages(nextPage)
                     request = await main_request(baseurl, list_headers, nextPage)
                     nextPage = request
-                    response = get_result(request, message.content)
+                    response = get_result(request, message.content.lower())
                     if response:
                         userId = message.author.id
                         guildId = int(config("GUILD_ID"))
