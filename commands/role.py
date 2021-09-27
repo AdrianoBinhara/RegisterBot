@@ -4,7 +4,7 @@ from discord.ext import commands
 from decouple import config
 import requests
 from discord.utils import get
-from tasks import verifiaction
+from tasks import verification
 
 baseurl = config("BASEAPI")
 securetyToken = config("SECURITY_TOKEN")
@@ -23,7 +23,7 @@ class Role(commands.Cog):
             isinstance(message.channel, discord.channel.DMChannel)
             and message.author != self.bot.user
         ):
-            if verifiaction.Verify.verify_email(message.content) is not True:
+            if verification.Verify.verify_email(message.content) is not True:
                 await message.channel.send("Email invalido!")
                 return
 

@@ -1,4 +1,6 @@
+from decouple import Config
 from discord.ext import commands, tasks
+from decouple import config
 
 
 class Purge(commands.Cog):
@@ -14,7 +16,7 @@ class Purge(commands.Cog):
 
 @tasks.loop(seconds=45)
 async def purgue_time(self):
-    channel = self.bot.get_channel(774813806844575757)
+    channel = self.bot.get_channel(config("GUILD_ID"))
 
     count = 0
     async for _ in channel.history(limit=None):
