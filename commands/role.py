@@ -1,3 +1,4 @@
+from os import name
 import discord
 from discord.enums import try_enum
 from discord.ext import commands
